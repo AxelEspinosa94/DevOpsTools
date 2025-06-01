@@ -1,0 +1,33 @@
+{
+  "variables": {
+    "aws_region": "us-east-1",
+    "instance_type": "t2.micro"
+  },
+  "builders": [{
+    "type": "amazon-ebs",
+    "region": "{{user `aws_region`}}",
+    "source_ami_filter": {
+      "filters": {
+        "name": "ubuntu/images/hvm-ssd/ubuntu-20.04-amd64-server-*",
+        "root-device-type": "ebs",
+        "virtualization-type": "hvm"
+      },
+      "owners": ["099720109477"],
+      "most_recent": true
+    },
+    "instance_type": "{{user `instance_type`}}",
+    "ssh_username": "ubuntu",
+    "ami_name": "node-nginx-{{timestamp}}"
+  }],
+  "provisioners": [{
+    "type": "shell",
+    "inline": [
+      "sudo apt update",
+      "sudo apt install -y nginx",
+      "curl -fsSL https://deb.nodesource.com/setup_18.x | sudo bash -",
+      "sudo apt install -y nodejs",
+      "sudo systemctl enable nginx",
+      "sudo systemctl start nginx"
+    ]
+  }]
+}
