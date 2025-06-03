@@ -2,6 +2,11 @@
 set -euo pipefail
 export DEBIAN_FRONTEND=noninteractive
 
+
+APP_DIR="/opt/myapp"
+APP_NAME="ADC-app"
+PORT=3000
+
 # ------------------------------------------------------------------
 # 0. Prerrequisitos
 # ------------------------------------------------------------------
@@ -15,11 +20,9 @@ done
 # ------------------------------------------------------------------
 # 1. Creación de la aplicación
 # ------------------------------------------------------------------
-sudo mkdir -p /opt/myapp
-sudo chown "$USER":"$USER" /opt/myapp
-cd /opt/myapp
+install -d -m 755 "$APP_DIR"
 
-cat > app.js <<'JS'
+cat > "$APP_DIR/app.js" <<'JS'
 const http = require('http');
 const hostname = '0.0.0.0';
 const port = process.env.PORT || 3000;
@@ -38,27 +41,22 @@ JS
 # ------------------------------------------------------------------
 # 2. Start / reload with PM2
 # ------------------------------------------------------------------
-APP_NAME="ADC-app"
-if pm2 describe "$APP_NAME" >/dev/null 2>&1; then
-  pm2 reload "$APP_NAME"
-else
-  pm2 start app.js --name "$APP_NAME" --time
-fi
+
+pm2 start "$APP_DIR/app.js" --name "$APP_NAME" --time
 pm2 save
 
 # ------------------------------------------------------------------
 # 3. Register PM2 with systemd (one call is enough)
 # ------------------------------------------------------------------
-sudo env PATH=$PATH:/usr/bin pm2 startup systemd -u ubuntu --hp /home/ubuntu
-sudo systemctl enable pm2-ubuntu
-sudo systemctl start  pm2-ubuntu
+pm2 startup systemd *--skip-env-check
+systemctl enable pm2-root
 
 # ------------------------------------------------------------------
 # 4. Wait until the app is alive
 # ------------------------------------------------------------------
-echo "⏳ Esperando al servidor en :3000..."
+echo "⏳ Esperando al servidor en :${PORT}..."
 for i in $(seq 1 15); do
-  if curl --silent --fail http://localhost:3000 >/dev/null 2>&1; then
+  if curl --silent --fail http://localhost:${PORT} >/dev/null 2>&1; then
     echo "✅ Servidor arriba en ${i}s"
     break
   fi
@@ -69,6 +67,5 @@ for i in $(seq 1 15); do
   fi
 done
 
-respuesta=$(curl --silent http://localhost:3000)
+respuesta=$(curl --silent http://localhost:${PORT})
 echo "Respuesta del servidor: $respuesta"
-echo "📜 Logs en: ~/.pm2/logs/${APP_NAME}-out.log"
