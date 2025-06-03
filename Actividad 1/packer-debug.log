@@ -1,0 +1,988 @@
+2025/06/02 15:31:42 [INFO] Packer version: 1.12.0 [go1.22.9 windows amd64]
+2025/06/02 15:31:42 [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2025/06/02 15:31:42 [INFO] PACKER_CONFIG env var set; attempting to open config file: C:\Users\odver\AppData\Roaming\packer.config
+2025/06/02 15:31:42 [WARN] Config file doesn't exist: C:\Users\odver\AppData\Roaming\packer.config
+2025/06/02 15:31:42 [INFO] Setting cache directory: D:\UNIR\MEXDEVOPS\2do Semestre\Herramientas DevOps\DevOpsTools\Actividad 1\packer_cache
+e: cannot determine if process is in background: Process background check error: not implemented yet
+2025/06/02 15:31:42 [ERR] Checkpoint error: EOF
+2025/06/02 15:31:42 [TRACE] listing potential installations for "github.com/hashicorp/amazon" that match ">= 1.0". plugingetter.ListInstallationsOptions{PluginDirectory:"C:\\Users\\odver\\AppData\\Roaming\\packer.d\\plugins", BinaryInstallationOptions:plugingetter.BinaryInstallationOptions{APIVersionMajor:"5", APIVersionMinor:"0", OS:"windows", ARCH:"amd64", Ext:".exe", Checksummers:[]plugingetter.Checksummer{plugingetter.Checksummer{Type:"sha256", Hash:(*sha256.digest)(0xc0000deb80)}}, ReleasesOnly:false}}
+2025/06/02 15:31:42 [TRACE] Found the following "github.com/hashicorp/amazon" installations: [{C:\Users\odver\AppData\Roaming\packer.d\plugins\github.com\hashicorp\amazon\packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe v1.3.6 x5.0}]
+2025/06/02 15:31:42 [INFO] found external [chroot ebs ebssurrogate ebsvolume instance] builders from amazon plugin
+2025/06/02 15:31:42 [INFO] found external [import] post-processors from amazon plugin
+2025/06/02 15:31:42 found external [ami parameterstore secretsmanager] datasource from amazon plugin
+2025/06/02 15:31:42 [TRACE] listing potential installations for <nil> that match "". plugingetter.ListInstallationsOptions{PluginDirectory:"C:\\Users\\odver\\AppData\\Roaming\\packer.d\\plugins", BinaryInstallationOptions:plugingetter.BinaryInstallationOptions{APIVersionMajor:"5", APIVersionMinor:"0", OS:"windows", ARCH:"amd64", Ext:".exe", Checksummers:[]plugingetter.Checksummer{plugingetter.Checksummer{Type:"sha256", Hash:(*sha256.digest)(0xc0000dec80)}}, ReleasesOnly:false}}
+2025/06/02 15:31:42 [INFO] found external [chroot ebs ebssurrogate ebsvolume instance] builders from amazon plugin
+2025/06/02 15:31:42 [INFO] found external [import] post-processors from amazon plugin
+2025/06/02 15:31:42 found external [ami parameterstore secretsmanager] datasource from amazon plugin
+2025/06/02 15:31:42 [TRACE] validateValue: not active for instance_type, so skipping
+2025/06/02 15:31:42 [TRACE] validateValue: not active for install_nginx_script, so skipping
+2025/06/02 15:31:42 [TRACE] validateValue: not active for install_node_script, so skipping
+2025/06/02 15:31:42 [TRACE] validateValue: not active for deploy_app_script, so skipping
+2025/06/02 15:31:42 [TRACE] validateValue: not active for aws_region, so skipping
+2025/06/02 15:31:42 [TRACE] Using protobuf for communication with plugins
+2025/06/02 15:31:42 [INFO] Starting external plugin C:\Users\odver\AppData\Roaming\packer.d\plugins\github.com\hashicorp\amazon\packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe start builder --protobuf ebs
+2025/06/02 15:31:42 Starting plugin: C:\Users\odver\AppData\Roaming\packer.d\plugins\github.com\hashicorp\amazon\packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe []string{"C:\\Users\\odver\\AppData\\Roaming\\packer.d\\plugins\\github.com\\hashicorp\\amazon\\packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe", "start", "builder", "--protobuf", "ebs"}
+2025/06/02 15:31:42 Waiting for RPC address for: C:\Users\odver\AppData\Roaming\packer.d\plugins\github.com\hashicorp\amazon\packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe
+2025/06/02 15:31:42 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:31:42 Plugin port range: [10000,25000]
+2025/06/02 15:31:42 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:31:42 Plugin address: tcp 127.0.0.1:10000
+2025/06/02 15:31:42 Received tcp RPC address for C:\Users\odver\AppData\Roaming\packer.d\plugins\github.com\hashicorp\amazon\packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe: addr is 127.0.0.1:10000
+2025/06/02 15:31:42 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:31:42 Waiting for connection...
+2025/06/02 15:31:42 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:31:42 Serving a plugin connection...
+2025/06/02 15:31:42 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:31:42 [TRACE] starting builder ebs
+2025/06/02 15:31:42 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:31:42 [DEBUG] - common: sending ConfigSpec as protobuf
+2025/06/02 15:31:42 [DEBUG] - common: receiving ConfigSpec as protobuf
+2025/06/02 15:31:42 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:31:42 [INFO] (aws): No AWS timeout and polling overrides have been set. Packer will default to waiter-specific delays and timeouts. If you would like to customize the length of time between retries and max number of retries you may do so by setting the environment variables AWS_POLL_DELAY_SECONDS and AWS_MAX_ATTEMPTS or the configuration options aws_polling_delay_seconds and aws_polling_max_attempts to your desired values.
+2025/06/02 15:31:42 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:31:42 [DEBUG] - common: sending ConfigSpec as protobuf
+2025/06/02 15:31:42 [DEBUG] - common: receiving ConfigSpec as protobuf
+2025/06/02 15:31:42 [INFO] Starting external plugin C:\ProgramData\chocolatey\lib\packer\tools\packer.exe execute --protobuf packer-provisioner-shell
+2025/06/02 15:31:42 Starting plugin: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe []string{"C:\\ProgramData\\chocolatey\\lib\\packer\\tools\\packer.exe", "execute", "--protobuf", "packer-provisioner-shell"}
+2025/06/02 15:31:42 Waiting for RPC address for: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe
+2025/06/02 15:31:42 packer.exe plugin: [INFO] Packer version: 1.12.0 [go1.22.9 windows amd64]
+2025/06/02 15:31:42 packer.exe plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2025/06/02 15:31:42 packer.exe plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: C:\Users\odver\AppData\Roaming\packer.config
+2025/06/02 15:31:42 packer.exe plugin: [WARN] Config file doesn't exist: C:\Users\odver\AppData\Roaming\packer.config
+2025/06/02 15:31:42 packer.exe plugin: [INFO] Setting cache directory: D:\UNIR\MEXDEVOPS\2do Semestre\Herramientas DevOps\DevOpsTools\Actividad 1\packer_cache
+2025/06/02 15:31:42 packer.exe plugin: Plugin port range: [10000,25000]
+2025/06/02 15:31:42 packer.exe plugin: [ERR] Checkpoint error: EOF
+2025/06/02 15:31:42 packer.exe plugin: Plugin address: tcp 127.0.0.1:10000
+2025/06/02 15:31:42 Received tcp RPC address for C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: addr is 127.0.0.1:10000
+2025/06/02 15:31:42 packer.exe plugin: Waiting for connection...
+2025/06/02 15:31:42 packer.exe plugin: Serving a plugin connection...
+2025/06/02 15:31:42 packer.exe plugin: [DEBUG] - common: sending ConfigSpec as protobuf
+2025/06/02 15:31:42 [DEBUG] - common: receiving ConfigSpec as protobuf
+2025/06/02 15:31:42 packer.exe plugin: [DEBUG] - common: sending ConfigSpec as protobuf
+2025/06/02 15:31:42 [DEBUG] - common: receiving ConfigSpec as protobuf
+2025/06/02 15:31:42 [INFO] Starting external plugin C:\ProgramData\chocolatey\lib\packer\tools\packer.exe execute --protobuf packer-provisioner-shell
+2025/06/02 15:31:42 Starting plugin: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe []string{"C:\\ProgramData\\chocolatey\\lib\\packer\\tools\\packer.exe", "execute", "--protobuf", "packer-provisioner-shell"}
+2025/06/02 15:31:42 Waiting for RPC address for: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe
+2025/06/02 15:31:42 packer.exe plugin: [INFO] Packer version: 1.12.0 [go1.22.9 windows amd64]
+2025/06/02 15:31:42 packer.exe plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2025/06/02 15:31:42 packer.exe plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: C:\Users\odver\AppData\Roaming\packer.config
+2025/06/02 15:31:42 packer.exe plugin: [WARN] Config file doesn't exist: C:\Users\odver\AppData\Roaming\packer.config
+2025/06/02 15:31:42 packer.exe plugin: [INFO] Setting cache directory: D:\UNIR\MEXDEVOPS\2do Semestre\Herramientas DevOps\DevOpsTools\Actividad 1\packer_cache
+2025/06/02 15:31:42 packer.exe plugin: Plugin port range: [10000,25000]
+2025/06/02 15:31:42 packer.exe plugin: [ERR] Checkpoint error: EOF
+2025/06/02 15:31:42 packer.exe plugin: Plugin address: tcp 127.0.0.1:10000
+2025/06/02 15:31:42 Received tcp RPC address for C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: addr is 127.0.0.1:10000
+2025/06/02 15:31:42 packer.exe plugin: Waiting for connection...
+2025/06/02 15:31:42 packer.exe plugin: Serving a plugin connection...
+2025/06/02 15:31:42 packer.exe plugin: [DEBUG] - common: sending ConfigSpec as protobuf
+2025/06/02 15:31:42 [DEBUG] - common: receiving ConfigSpec as protobuf
+2025/06/02 15:31:42 packer.exe plugin: [DEBUG] - common: sending ConfigSpec as protobuf
+2025/06/02 15:31:42 [DEBUG] - common: receiving ConfigSpec as protobuf
+2025/06/02 15:31:42 [INFO] Starting external plugin C:\ProgramData\chocolatey\lib\packer\tools\packer.exe execute --protobuf packer-provisioner-shell
+2025/06/02 15:31:42 Starting plugin: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe []string{"C:\\ProgramData\\chocolatey\\lib\\packer\\tools\\packer.exe", "execute", "--protobuf", "packer-provisioner-shell"}
+2025/06/02 15:31:42 Waiting for RPC address for: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe
+2025/06/02 15:31:42 packer.exe plugin: [INFO] Packer version: 1.12.0 [go1.22.9 windows amd64]
+2025/06/02 15:31:42 packer.exe plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2025/06/02 15:31:42 packer.exe plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: C:\Users\odver\AppData\Roaming\packer.config
+2025/06/02 15:31:42 packer.exe plugin: [WARN] Config file doesn't exist: C:\Users\odver\AppData\Roaming\packer.config
+2025/06/02 15:31:42 packer.exe plugin: [INFO] Setting cache directory: D:\UNIR\MEXDEVOPS\2do Semestre\Herramientas DevOps\DevOpsTools\Actividad 1\packer_cache
+2025/06/02 15:31:42 packer.exe plugin: Plugin port range: [10000,25000]
+2025/06/02 15:31:42 packer.exe plugin: [ERR] Checkpoint error: EOF
+2025/06/02 15:31:42 packer.exe plugin: Plugin address: tcp 127.0.0.1:10000
+2025/06/02 15:31:42 Received tcp RPC address for C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: addr is 127.0.0.1:10000
+2025/06/02 15:31:42 packer.exe plugin: Waiting for connection...
+2025/06/02 15:31:42 packer.exe plugin: Serving a plugin connection...
+2025/06/02 15:31:42 packer.exe plugin: [DEBUG] - common: sending ConfigSpec as protobuf
+2025/06/02 15:31:42 [DEBUG] - common: receiving ConfigSpec as protobuf
+2025/06/02 15:31:42 packer.exe plugin: [DEBUG] - common: sending ConfigSpec as protobuf
+2025/06/02 15:31:42 [DEBUG] - common: receiving ConfigSpec as protobuf
+2025/06/02 15:31:42 [INFO] Starting external plugin C:\ProgramData\chocolatey\lib\packer\tools\packer.exe execute --protobuf packer-post-processor-manifest
+2025/06/02 15:31:42 Starting plugin: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe []string{"C:\\ProgramData\\chocolatey\\lib\\packer\\tools\\packer.exe", "execute", "--protobuf", "packer-post-processor-manifest"}
+2025/06/02 15:31:42 Waiting for RPC address for: C:\ProgramData\chocolatey\lib\packer\tools\packer.exe
+2025/06/02 15:31:42 packer.exe plugin: [INFO] Packer version: 1.12.0 [go1.22.9 windows amd64]
+2025/06/02 15:31:42 packer.exe plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2025/06/02 15:31:42 packer.exe plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: C:\Users\odver\AppData\Roaming\packer.config
+2025/06/02 15:31:42 packer.exe plugin: [WARN] Config file doesn't exist: C:\Users\odver\AppData\Roaming\packer.config
+2025/06/02 15:31:42 packer.exe plugin: [INFO] Setting cache directory: D:\UNIR\MEXDEVOPS\2do Semestre\Herramientas DevOps\DevOpsTools\Actividad 1\packer_cache
+2025/06/02 15:31:42 packer.exe plugin: Plugin port range: [10000,25000]
+2025/06/02 15:31:42 packer.exe plugin: [ERR] Checkpoint error: EOF
+2025/06/02 15:31:42 packer.exe plugin: Plugin address: tcp 127.0.0.1:10000
+2025/06/02 15:31:42 Received tcp RPC address for C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: addr is 127.0.0.1:10000
+2025/06/02 15:31:42 packer.exe plugin: Waiting for connection...
+2025/06/02 15:31:42 packer.exe plugin: Serving a plugin connection...
+2025/06/02 15:31:42 packer.exe plugin: [DEBUG] - common: sending ConfigSpec as protobuf
+2025/06/02 15:31:42 [DEBUG] - common: receiving ConfigSpec as protobuf
+2025/06/02 15:31:42 packer.exe plugin: [DEBUG] - common: sending ConfigSpec as protobuf
+2025/06/02 15:31:42 [DEBUG] - common: receiving ConfigSpec as protobuf
+2025/06/02 15:31:42 ui: amazon-ebs.ubuntu: output will be in this color.
+2025/06/02 15:31:42 ui: 
+2025/06/02 15:31:42 Build debug mode: false
+2025/06/02 15:31:42 Force build: false
+2025/06/02 15:31:42 On error: ask
+2025/06/02 15:31:42 Waiting on builds to complete...
+2025/06/02 15:31:42 Starting build run: amazon-ebs.ubuntu
+2025/06/02 15:31:42 Running builder: amazon-ebs
+2025/06/02 15:31:42 [INFO] (telemetry) Starting builder amazon-ebs.ubuntu
+2025/06/02 15:31:42 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:31:42 [INFO] AWS Auth provider used: "SharedCredentialsProvider"
+2025/06/02 15:31:42 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:31:42 Found region us-east-2
+2025/06/02 15:31:42 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:31:42 [INFO] AWS Auth provider used: "SharedCredentialsProvider"
+2025/06/02 15:31:44 ui: ==> amazon-ebs.ubuntu: Prevalidating any provided VPC information
+2025/06/02 15:31:44 ui: ==> amazon-ebs.ubuntu: Prevalidating AMI Name: ADC-nodejs-nginx-app-1748899902
+2025/06/02 15:31:45 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:31:45 Using AMI Filters {
+2025/06/02 15:31:45 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin:   Filters: [{
+2025/06/02 15:31:45 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin:       Name: "virtualization-type",
+2025/06/02 15:31:45 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin:       Values: ["hvm"]
+2025/06/02 15:31:45 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin:     },{
+2025/06/02 15:31:45 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin:       Name: "name",
+2025/06/02 15:31:45 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin:       Values: ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]
+2025/06/02 15:31:45 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin:     },{
+2025/06/02 15:31:45 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin:       Name: "root-device-type",
+2025/06/02 15:31:45 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin:       Values: ["ebs"]
+2025/06/02 15:31:45 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin:     }],
+2025/06/02 15:31:45 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin:   IncludeDeprecated: false,
+2025/06/02 15:31:45 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin:   Owners: ["099720109477"]
+2025/06/02 15:31:45 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: }
+2025/06/02 15:31:46 ui:     amazon-ebs.ubuntu: Found Image ID: ami-0a265c4872897c211
+2025/06/02 15:31:46 ui: ==> amazon-ebs.ubuntu: Creating temporary keypair: packer_683e183e-32a5-08e3-d4c1-ab308fc71905
+2025/06/02 15:31:46 ui: ==> amazon-ebs.ubuntu: Creating temporary security group for this instance: packer_683e1842-f72d-1bf4-67a6-2f42eb642741
+2025/06/02 15:31:47 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:31:47 [DEBUG] Waiting for temporary security group: sg-08f78b17cee20efa3
+2025/06/02 15:31:47 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:31:47 [DEBUG] Found security group sg-08f78b17cee20efa3
+2025/06/02 15:31:47 ui: ==> amazon-ebs.ubuntu: Authorizing access to port 22 from [0.0.0.0/0] in the temporary security groups...
+2025/06/02 15:31:48 ui: ==> amazon-ebs.ubuntu: Launching a source AWS instance...
+2025/06/02 15:31:48 ui:     amazon-ebs.ubuntu: Adding tag: "Builder": "Packer"
+2025/06/02 15:31:48 ui:     amazon-ebs.ubuntu: Adding tag: "Name": "packer-build-node-nginx"
+2025/06/02 15:31:49 ui:     amazon-ebs.ubuntu: Instance ID: i-0072ccfbe2f8e6713
+2025/06/02 15:31:49 ui: ==> amazon-ebs.ubuntu: Waiting for instance (i-0072ccfbe2f8e6713) to become ready...
+2025/06/02 15:32:06 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:06 [INFO] Not using winrm communicator, skipping get password...
+2025/06/02 15:32:06 ui: ==> amazon-ebs.ubuntu: Using SSH communicator to connect: 52.14.185.143
+2025/06/02 15:32:06 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:06 [INFO] Waiting for SSH, up to timeout: 10m0s
+2025/06/02 15:32:06 ui: ==> amazon-ebs.ubuntu: Waiting for SSH to become available...
+2025/06/02 15:32:06 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:06 Using host value: 52.14.185.143
+2025/06/02 15:32:12 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:12 [INFO] Attempting SSH connection to 52.14.185.143:22...
+2025/06/02 15:32:12 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:12 [DEBUG] reconnecting to TCP connection for SSH
+2025/06/02 15:32:12 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:12 [DEBUG] handshaking with SSH
+2025/06/02 15:32:13 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:13 [DEBUG] handshake complete!
+2025/06/02 15:32:13 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:13 [INFO] no local agent socket, will not connect agent
+2025/06/02 15:32:13 ui: ==> amazon-ebs.ubuntu: Connected to SSH!
+2025/06/02 15:32:13 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:13 Running the provision hook
+2025/06/02 15:32:13 [INFO] (telemetry) Starting provisioner shell
+2025/06/02 15:32:13 packer.exe plugin: [DEBUG] - common: sending ConfigSpec as protobuf
+2025/06/02 15:32:13 [DEBUG] - common: receiving ConfigSpec as protobuf
+2025/06/02 15:32:13 ui: ==> amazon-ebs.ubuntu: Provisioning with shell script: dependencies/Nginx-installation.sh
+2025/06/02 15:32:13 packer.exe plugin: Opening dependencies/Nginx-installation.sh for reading
+2025/06/02 15:32:13 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:13 [DEBUG] Opening new ssh session
+2025/06/02 15:32:13 packer.exe plugin: [INFO] 1945 bytes written for 'uploadData'
+2025/06/02 15:32:13 [INFO] 1945 bytes written for 'uploadData'
+2025/06/02 15:32:16 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:16 [DEBUG] Starting remote scp process:  scp -vt /tmp
+2025/06/02 15:32:16 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:16 [DEBUG] Started SCP session, beginning transfers...
+2025/06/02 15:32:16 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:16 [DEBUG] Copying input data into temporary file so we can read the length
+2025/06/02 15:32:16 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:16 [DEBUG] scp: Uploading script_405.sh: perms=C0644 size=1945
+2025/06/02 15:32:16 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:16 [DEBUG] SCP session complete, closing stdin pipe.
+2025/06/02 15:32:16 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:16 [DEBUG] Waiting for SSH session to complete.
+2025/06/02 15:32:16 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:16 [DEBUG] scp stderr (length 31): Sink: C0644 1945 script_405.sh
+2025/06/02 15:32:16 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:16 [DEBUG] Opening new ssh session
+2025/06/02 15:32:16 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:16 [DEBUG] starting remote command: chmod 0755 /tmp/script_405.sh
+2025/06/02 15:32:16 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:16 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:32:16 [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:32:16 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:32:16 packer.exe plugin: [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:32:16 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:16 [DEBUG] Opening new ssh session
+2025/06/02 15:32:16 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:16 [DEBUG] starting remote command: sudo -E bash '/tmp/script_405.sh'
+2025/06/02 15:32:17 ui:     amazon-ebs.ubuntu: 🚀  Actualizando índice de paquetes…
+2025/06/02 15:32:17 ui:     amazon-ebs.ubuntu: Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+2025/06/02 15:32:17 ui:     amazon-ebs.ubuntu: Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+2025/06/02 15:32:17 ui:     amazon-ebs.ubuntu: Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+2025/06/02 15:32:17 ui:     amazon-ebs.ubuntu: Get:4 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [3564 kB]
+2025/06/02 15:32:18 ui:     amazon-ebs.ubuntu: Get:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+2025/06/02 15:32:18 ui:     amazon-ebs.ubuntu: Get:6 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [518 kB]
+2025/06/02 15:32:18 ui:     amazon-ebs.ubuntu: Get:7 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [3768 kB]
+2025/06/02 15:32:18 ui:     amazon-ebs.ubuntu: Get:8 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [527 kB]
+2025/06/02 15:32:18 ui:     amazon-ebs.ubuntu: Get:9 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [1040 kB]
+2025/06/02 15:32:18 ui:     amazon-ebs.ubuntu: Get:10 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [221 kB]
+2025/06/02 15:32:18 ui:     amazon-ebs.ubuntu: Get:11 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [22.4 kB]
+2025/06/02 15:32:18 ui:     amazon-ebs.ubuntu: Get:12 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [26.6 kB]
+2025/06/02 15:32:18 ui:     amazon-ebs.ubuntu: Get:13 http://security.ubuntu.com/ubuntu focal-security/multiverse Translation-en [6448 B]
+2025/06/02 15:32:18 ui:     amazon-ebs.ubuntu: Get:14 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [604 B]
+2025/06/02 15:32:18 ui:     amazon-ebs.ubuntu: Get:15 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8628 kB]
+2025/06/02 15:32:19 ui:     amazon-ebs.ubuntu: Get:16 http://archive.ubuntu.com/ubuntu focal/universe Translation-en [5124 kB]
+2025/06/02 15:32:20 ui:     amazon-ebs.ubuntu: Get:17 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+2025/06/02 15:32:20 ui:     amazon-ebs.ubuntu: Get:18 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [144 kB]
+2025/06/02 15:32:20 ui:     amazon-ebs.ubuntu: Get:19 http://archive.ubuntu.com/ubuntu focal/multiverse Translation-en [104 kB]
+2025/06/02 15:32:20 ui:     amazon-ebs.ubuntu: Get:20 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9136 B]
+2025/06/02 15:32:20 ui:     amazon-ebs.ubuntu: Get:21 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [3954 kB]
+2025/06/02 15:32:20 ui:     amazon-ebs.ubuntu: Get:22 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [601 kB]
+2025/06/02 15:32:20 ui:     amazon-ebs.ubuntu: Get:23 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [3922 kB]
+2025/06/02 15:32:20 ui:     amazon-ebs.ubuntu: Get:24 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [548 kB]
+2025/06/02 15:32:20 ui:     amazon-ebs.ubuntu: Get:25 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1262 kB]
+2025/06/02 15:32:20 ui:     amazon-ebs.ubuntu: Get:26 http://archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [303 kB]
+2025/06/02 15:32:20 ui:     amazon-ebs.ubuntu: Get:27 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [29.3 kB]
+2025/06/02 15:32:20 ui:     amazon-ebs.ubuntu: Get:28 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [29.7 kB]
+2025/06/02 15:32:20 ui:     amazon-ebs.ubuntu: Get:29 http://archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [8316 B]
+2025/06/02 15:32:20 ui:     amazon-ebs.ubuntu: Get:30 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [688 B]
+2025/06/02 15:32:20 ui:     amazon-ebs.ubuntu: Get:31 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [45.7 kB]
+2025/06/02 15:32:20 ui:     amazon-ebs.ubuntu: Get:32 http://archive.ubuntu.com/ubuntu focal-backports/main Translation-en [16.3 kB]
+2025/06/02 15:32:20 ui:     amazon-ebs.ubuntu: Get:33 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [1420 B]
+2025/06/02 15:32:20 ui:     amazon-ebs.ubuntu: Get:34 http://archive.ubuntu.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B]
+2025/06/02 15:32:21 ui:     amazon-ebs.ubuntu: Get:35 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [25.0 kB]
+2025/06/02 15:32:21 ui:     amazon-ebs.ubuntu: Get:36 http://archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [16.3 kB]
+2025/06/02 15:32:21 ui:     amazon-ebs.ubuntu: Get:37 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [880 B]
+2025/06/02 15:32:21 ui:     amazon-ebs.ubuntu: Get:38 http://archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B]
+2025/06/02 15:32:30 ui:     amazon-ebs.ubuntu: Fetched 35.1 MB in 11s (3088 kB/s)
+2025/06/02 15:32:32 ui:     amazon-ebs.ubuntu: Reading package lists...
+2025/06/02 15:32:32 ui:     amazon-ebs.ubuntu: 📦  Instalando Nginx y UFW (si faltan)…
+2025/06/02 15:32:32 ui:     amazon-ebs.ubuntu: Get:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal InRelease [265 kB]
+2025/06/02 15:32:32 ui:     amazon-ebs.ubuntu: Get:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+2025/06/02 15:32:32 ui:     amazon-ebs.ubuntu: Get:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+2025/06/02 15:32:32 ui:     amazon-ebs.ubuntu: Hit:4 http://security.ubuntu.com/ubuntu focal-security InRelease
+2025/06/02 15:32:32 ui:     amazon-ebs.ubuntu: Get:5 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/main amd64 Packages [970 kB]
+2025/06/02 15:32:32 ui:     amazon-ebs.ubuntu: Get:6 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/main Translation-en [506 kB]
+2025/06/02 15:32:32 ui:     amazon-ebs.ubuntu: Get:7 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/main amd64 c-n-f Metadata [29.5 kB]
+2025/06/02 15:32:32 ui:     amazon-ebs.ubuntu: Get:8 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [22.0 kB]
+2025/06/02 15:32:32 ui:     amazon-ebs.ubuntu: Get:9 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/restricted Translation-en [6212 B]
+2025/06/02 15:32:32 ui:     amazon-ebs.ubuntu: Get:10 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/restricted amd64 c-n-f Metadata [392 B]
+2025/06/02 15:32:32 ui:     amazon-ebs.ubuntu: Get:11 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8628 kB]
+2025/06/02 15:32:32 ui:     amazon-ebs.ubuntu: Get:12 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/universe Translation-en [5124 kB]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:13 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:14 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [144 kB]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:15 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/multiverse Translation-en [104 kB]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:16 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9136 B]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:17 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [3954 kB]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:18 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main Translation-en [601 kB]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:19 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [18.0 kB]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:20 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [3922 kB]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:21 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [548 kB]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:22 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [604 B]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:23 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1262 kB]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:24 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [303 kB]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:25 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [29.3 kB]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:26 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [29.7 kB]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:27 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [8316 B]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:28 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [688 B]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:29 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [45.7 kB]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:30 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-backports/main Translation-en [16.3 kB]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:31 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [1420 B]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:32 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:33 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [25.0 kB]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:34 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [16.3 kB]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:35 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [880 B]
+2025/06/02 15:32:33 ui:     amazon-ebs.ubuntu: Get:36 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B]
+2025/06/02 15:32:38 ui:     amazon-ebs.ubuntu: Fetched 27.1 MB in 5s (5530 kB/s)
+2025/06/02 15:32:39 ui:     amazon-ebs.ubuntu: Reading package lists...
+2025/06/02 15:32:39 ui:     amazon-ebs.ubuntu: Reading package lists...
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Building dependency tree...
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Reading state information...
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: ufw is already the newest version (0.36-6ubuntu1.1).
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: ufw set to manually installed.
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: The following additional packages will be installed:
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu:   fontconfig-config fonts-dejavu-core libfontconfig1 libgd3 libjbig0
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu:   libjpeg-turbo8 libjpeg8 libnginx-mod-http-image-filter
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu:   libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream libtiff5
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu:   libwebp6 libxpm4 nginx-common nginx-core
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Suggested packages:
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu:   libgd-tools fcgiwrap nginx-doc ssl-cert
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: The following NEW packages will be installed:
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu:   fontconfig-config fonts-dejavu-core libfontconfig1 libgd3 libjbig0
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu:   libjpeg-turbo8 libjpeg8 libnginx-mod-http-image-filter
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu:   libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream libtiff5
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu:   libwebp6 libxpm4 nginx nginx-common nginx-core
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: 0 upgraded, 17 newly installed, 0 to remove and 30 not upgraded.
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Need to get 2438 kB of archives.
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: After this operation, 7926 kB of additional disk space will be used.
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Get:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/main amd64 fonts-dejavu-core all 2.37-1 [1041 kB]
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Get:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/main amd64 fontconfig-config all 2.13.1-2ubuntu3 [28.8 kB]
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Get:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/main amd64 libfontconfig1 amd64 2.13.1-2ubuntu3 [114 kB]
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Get:4 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libjpeg-turbo8 amd64 2.0.3-0ubuntu1.20.04.3 [118 kB]
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Get:5 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/main amd64 libjpeg8 amd64 8c-2ubuntu8 [2194 B]
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Get:6 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libjbig0 amd64 2.1-3.1ubuntu0.20.04.1 [27.3 kB]
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Get:7 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libwebp6 amd64 0.6.1-2ubuntu0.20.04.3 [185 kB]
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Get:8 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libtiff5 amd64 4.1.0+git191117-2ubuntu0.20.04.14 [164 kB]
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Get:9 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libxpm4 amd64 1:3.5.12-1ubuntu0.20.04.2 [34.9 kB]
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Get:10 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libgd3 amd64 2.2.5-5.2ubuntu2.4 [118 kB]
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Get:11 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 nginx-common all 1.18.0-0ubuntu1.7 [37.8 kB]
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Get:12 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libnginx-mod-http-image-filter amd64 1.18.0-0ubuntu1.7 [14.8 kB]
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Get:13 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libnginx-mod-http-xslt-filter amd64 1.18.0-0ubuntu1.7 [13.1 kB]
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Get:14 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libnginx-mod-mail amd64 1.18.0-0ubuntu1.7 [43.0 kB]
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Get:15 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libnginx-mod-stream amd64 1.18.0-0ubuntu1.7 [67.3 kB]
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Get:16 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 nginx-core amd64 1.18.0-0ubuntu1.7 [425 kB]
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Get:17 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 nginx all 1.18.0-0ubuntu1.7 [3620 B]
+2025/06/02 15:32:40 ui error: ==> amazon-ebs.ubuntu: debconf: unable to initialize frontend: Dialog
+2025/06/02 15:32:40 ui error: ==> amazon-ebs.ubuntu: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+2025/06/02 15:32:40 ui error: ==> amazon-ebs.ubuntu: debconf: falling back to frontend: Readline
+2025/06/02 15:32:40 ui error: ==> amazon-ebs.ubuntu: debconf: unable to initialize frontend: Readline
+2025/06/02 15:32:40 ui error: ==> amazon-ebs.ubuntu: debconf: (This frontend requires a controlling tty.)
+2025/06/02 15:32:40 ui error: ==> amazon-ebs.ubuntu: debconf: falling back to frontend: Teletype
+2025/06/02 15:32:40 ui error: ==> amazon-ebs.ubuntu: dpkg-preconfigure: unable to re-open stdin:
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Fetched 2438 kB in 0s (34.7 MB/s)
+2025/06/02 15:32:40 ui:     amazon-ebs.ubuntu: Selecting previously unselected package fonts-dejavu-core.
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: (Reading database ... 62202 files and directories currently installed.)
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Preparing to unpack .../00-fonts-dejavu-core_2.37-1_all.deb ...
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Unpacking fonts-dejavu-core (2.37-1) ...
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Selecting previously unselected package fontconfig-config.
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Preparing to unpack .../01-fontconfig-config_2.13.1-2ubuntu3_all.deb ...
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Unpacking fontconfig-config (2.13.1-2ubuntu3) ...
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libfontconfig1:amd64.
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Preparing to unpack .../02-libfontconfig1_2.13.1-2ubuntu3_amd64.deb ...
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Unpacking libfontconfig1:amd64 (2.13.1-2ubuntu3) ...
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libjpeg-turbo8:amd64.
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Preparing to unpack .../03-libjpeg-turbo8_2.0.3-0ubuntu1.20.04.3_amd64.deb ...
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Unpacking libjpeg-turbo8:amd64 (2.0.3-0ubuntu1.20.04.3) ...
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libjpeg8:amd64.
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Preparing to unpack .../04-libjpeg8_8c-2ubuntu8_amd64.deb ...
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Unpacking libjpeg8:amd64 (8c-2ubuntu8) ...
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libjbig0:amd64.
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Preparing to unpack .../05-libjbig0_2.1-3.1ubuntu0.20.04.1_amd64.deb ...
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Unpacking libjbig0:amd64 (2.1-3.1ubuntu0.20.04.1) ...
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libwebp6:amd64.
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Preparing to unpack .../06-libwebp6_0.6.1-2ubuntu0.20.04.3_amd64.deb ...
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Unpacking libwebp6:amd64 (0.6.1-2ubuntu0.20.04.3) ...
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libtiff5:amd64.
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Preparing to unpack .../07-libtiff5_4.1.0+git191117-2ubuntu0.20.04.14_amd64.deb ...
+2025/06/02 15:32:41 ui:     amazon-ebs.ubuntu: Unpacking libtiff5:amd64 (4.1.0+git191117-2ubuntu0.20.04.14) ...
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libxpm4:amd64.
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Preparing to unpack .../08-libxpm4_1%3a3.5.12-1ubuntu0.20.04.2_amd64.deb ...
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Unpacking libxpm4:amd64 (1:3.5.12-1ubuntu0.20.04.2) ...
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libgd3:amd64.
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Preparing to unpack .../09-libgd3_2.2.5-5.2ubuntu2.4_amd64.deb ...
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Unpacking libgd3:amd64 (2.2.5-5.2ubuntu2.4) ...
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Selecting previously unselected package nginx-common.
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Preparing to unpack .../10-nginx-common_1.18.0-0ubuntu1.7_all.deb ...
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Unpacking nginx-common (1.18.0-0ubuntu1.7) ...
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libnginx-mod-http-image-filter.
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Preparing to unpack .../11-libnginx-mod-http-image-filter_1.18.0-0ubuntu1.7_amd64.deb ...
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Unpacking libnginx-mod-http-image-filter (1.18.0-0ubuntu1.7) ...
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libnginx-mod-http-xslt-filter.
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Preparing to unpack .../12-libnginx-mod-http-xslt-filter_1.18.0-0ubuntu1.7_amd64.deb ...
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Unpacking libnginx-mod-http-xslt-filter (1.18.0-0ubuntu1.7) ...
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libnginx-mod-mail.
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Preparing to unpack .../13-libnginx-mod-mail_1.18.0-0ubuntu1.7_amd64.deb ...
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Unpacking libnginx-mod-mail (1.18.0-0ubuntu1.7) ...
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libnginx-mod-stream.
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Preparing to unpack .../14-libnginx-mod-stream_1.18.0-0ubuntu1.7_amd64.deb ...
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Unpacking libnginx-mod-stream (1.18.0-0ubuntu1.7) ...
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Selecting previously unselected package nginx-core.
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Preparing to unpack .../15-nginx-core_1.18.0-0ubuntu1.7_amd64.deb ...
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Unpacking nginx-core (1.18.0-0ubuntu1.7) ...
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Selecting previously unselected package nginx.
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Preparing to unpack .../16-nginx_1.18.0-0ubuntu1.7_all.deb ...
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Unpacking nginx (1.18.0-0ubuntu1.7) ...
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Setting up libxpm4:amd64 (1:3.5.12-1ubuntu0.20.04.2) ...
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: Setting up nginx-common (1.18.0-0ubuntu1.7) ...
+2025/06/02 15:32:42 ui:     amazon-ebs.ubuntu: debconf: unable to initialize frontend: Dialog
+2025/06/02 15:32:43 ui:     amazon-ebs.ubuntu: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+2025/06/02 15:32:43 ui:     amazon-ebs.ubuntu: debconf: falling back to frontend: Readline
+2025/06/02 15:32:43 ui:     amazon-ebs.ubuntu: Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /lib/systemd/system/nginx.service.
+2025/06/02 15:32:43 ui:     amazon-ebs.ubuntu: Setting up libjbig0:amd64 (2.1-3.1ubuntu0.20.04.1) ...
+2025/06/02 15:32:43 ui:     amazon-ebs.ubuntu: Setting up libnginx-mod-http-xslt-filter (1.18.0-0ubuntu1.7) ...
+2025/06/02 15:32:43 ui:     amazon-ebs.ubuntu: Setting up libwebp6:amd64 (0.6.1-2ubuntu0.20.04.3) ...
+2025/06/02 15:32:43 ui:     amazon-ebs.ubuntu: Setting up fonts-dejavu-core (2.37-1) ...
+2025/06/02 15:32:43 ui:     amazon-ebs.ubuntu: Setting up libjpeg-turbo8:amd64 (2.0.3-0ubuntu1.20.04.3) ...
+2025/06/02 15:32:43 ui:     amazon-ebs.ubuntu: Setting up libjpeg8:amd64 (8c-2ubuntu8) ...
+2025/06/02 15:32:43 ui:     amazon-ebs.ubuntu: Setting up libnginx-mod-mail (1.18.0-0ubuntu1.7) ...
+2025/06/02 15:32:43 ui:     amazon-ebs.ubuntu: Setting up fontconfig-config (2.13.1-2ubuntu3) ...
+2025/06/02 15:32:44 ui:     amazon-ebs.ubuntu: Setting up libnginx-mod-stream (1.18.0-0ubuntu1.7) ...
+2025/06/02 15:32:44 ui:     amazon-ebs.ubuntu: Setting up libtiff5:amd64 (4.1.0+git191117-2ubuntu0.20.04.14) ...
+2025/06/02 15:32:44 ui:     amazon-ebs.ubuntu: Setting up libfontconfig1:amd64 (2.13.1-2ubuntu3) ...
+2025/06/02 15:32:44 ui:     amazon-ebs.ubuntu: Setting up libgd3:amd64 (2.2.5-5.2ubuntu2.4) ...
+2025/06/02 15:32:44 ui:     amazon-ebs.ubuntu: Setting up libnginx-mod-http-image-filter (1.18.0-0ubuntu1.7) ...
+2025/06/02 15:32:44 ui:     amazon-ebs.ubuntu: Setting up nginx-core (1.18.0-0ubuntu1.7) ...
+2025/06/02 15:32:44 ui:     amazon-ebs.ubuntu: Setting up nginx (1.18.0-0ubuntu1.7) ...
+2025/06/02 15:32:44 ui:     amazon-ebs.ubuntu: Processing triggers for ufw (0.36-6ubuntu1.1) ...
+2025/06/02 15:32:44 ui:     amazon-ebs.ubuntu: Processing triggers for systemd (245.4-4ubuntu3.24) ...
+2025/06/02 15:32:45 ui:     amazon-ebs.ubuntu: Processing triggers for man-db (2.9.1-1) ...
+2025/06/02 15:32:45 ui:     amazon-ebs.ubuntu: Processing triggers for libc-bin (2.31-0ubuntu9.17) ...
+2025/06/02 15:32:47 ui:     amazon-ebs.ubuntu: 📡  Habilitando y arrancando Nginx…
+2025/06/02 15:32:47 ui error: ==> amazon-ebs.ubuntu: Synchronizing state of nginx.service with SysV service script with /lib/systemd/systemd-sysv-install.
+2025/06/02 15:32:47 ui error: ==> amazon-ebs.ubuntu: Executing: /lib/systemd/systemd-sysv-install enable nginx
+2025/06/02 15:32:48 ui:     amazon-ebs.ubuntu: 🛡  Asegurando que UFW permita SSH antes de activarlo…
+2025/06/02 15:32:48 ui:     amazon-ebs.ubuntu: Rules updated
+2025/06/02 15:32:48 ui:     amazon-ebs.ubuntu: Rules updated (v6)
+2025/06/02 15:32:48 ui:     amazon-ebs.ubuntu: 🛡  Permitiendo tráfico HTTP (puerto 80) únicamente…
+2025/06/02 15:32:48 ui:     amazon-ebs.ubuntu: Rules updated
+2025/06/02 15:32:48 ui:     amazon-ebs.ubuntu: Rules updated (v6)
+2025/06/02 15:32:48 ui:     amazon-ebs.ubuntu: 🔒  Activando UFW si estaba inactivo…
+2025/06/02 15:32:48 ui:     amazon-ebs.ubuntu: Firewall is active and enabled on system startup
+2025/06/02 15:32:48 ui:     amazon-ebs.ubuntu: 📊  Reglas finales de UFW:
+2025/06/02 15:32:48 ui:     amazon-ebs.ubuntu: Status: active
+2025/06/02 15:32:48 ui:     amazon-ebs.ubuntu: Logging: on (low)
+2025/06/02 15:32:48 ui:     amazon-ebs.ubuntu: Default: deny (incoming), allow (outgoing), disabled (routed)
+2025/06/02 15:32:48 ui:     amazon-ebs.ubuntu: New profiles: skip
+2025/06/02 15:32:48 ui:     amazon-ebs.ubuntu:
+2025/06/02 15:32:48 ui:     amazon-ebs.ubuntu: To                         Action      From
+2025/06/02 15:32:48 ui:     amazon-ebs.ubuntu: --                         ------      ----
+2025/06/02 15:32:48 ui:     amazon-ebs.ubuntu: 22/tcp (OpenSSH)           ALLOW IN    Anywhere
+2025/06/02 15:32:48 ui:     amazon-ebs.ubuntu: 80/tcp (Nginx HTTP)        ALLOW IN    Anywhere
+2025/06/02 15:32:48 ui:     amazon-ebs.ubuntu: 22/tcp (OpenSSH (v6))      ALLOW IN    Anywhere (v6)
+2025/06/02 15:32:48 ui:     amazon-ebs.ubuntu: 80/tcp (Nginx HTTP (v6))   ALLOW IN    Anywhere (v6)
+2025/06/02 15:32:48 ui:     amazon-ebs.ubuntu:
+2025/06/02 15:32:48 ui:     amazon-ebs.ubuntu: 🧹  Limpiando cloud-init...
+2025/06/02 15:32:49 ui error: ==> amazon-ebs.ubuntu: nginx: [warn] conflicting server name "_" on 0.0.0.0:80, ignored
+2025/06/02 15:32:49 ui error: ==> amazon-ebs.ubuntu: nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+2025/06/02 15:32:49 ui error: ==> amazon-ebs.ubuntu: nginx: configuration file /etc/nginx/nginx.conf test is successful
+2025/06/02 15:32:49 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:49 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:32:49 [INFO] 16305 bytes written for 'stdout'
+2025/06/02 15:32:49 [INFO] 758 bytes written for 'stderr'
+2025/06/02 15:32:49 [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:32:49 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:32:49 packer.exe plugin: [INFO] 758 bytes written for 'stderr'
+2025/06/02 15:32:49 packer.exe plugin: [INFO] 16305 bytes written for 'stdout'
+2025/06/02 15:32:49 packer.exe plugin: [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:32:49 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:49 [DEBUG] Opening new ssh session
+2025/06/02 15:32:49 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:49 [DEBUG] starting remote command: rm -f /tmp/script_405.sh
+2025/06/02 15:32:49 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:49 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:32:49 [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:32:49 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:32:49 packer.exe plugin: [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:32:49 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:49 [DEBUG] Opening new ssh session
+2025/06/02 15:32:49 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:49 [DEBUG] starting remote command: rm -f
+2025/06/02 15:32:49 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:49 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:32:49 [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:32:49 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:32:49 packer.exe plugin: [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:32:49 [INFO] (telemetry) ending shell
+2025/06/02 15:32:49 [INFO] (telemetry) Starting provisioner shell
+2025/06/02 15:32:49 packer.exe plugin: [DEBUG] - common: sending ConfigSpec as protobuf
+2025/06/02 15:32:49 [DEBUG] - common: receiving ConfigSpec as protobuf
+2025/06/02 15:32:49 ui: ==> amazon-ebs.ubuntu: Provisioning with shell script: dependencies/Node-installation.sh
+2025/06/02 15:32:49 packer.exe plugin: Opening dependencies/Node-installation.sh for reading
+2025/06/02 15:32:49 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:49 [DEBUG] Opening new ssh session
+2025/06/02 15:32:49 packer.exe plugin: [INFO] 1800 bytes written for 'uploadData'
+2025/06/02 15:32:49 [INFO] 1800 bytes written for 'uploadData'
+2025/06/02 15:32:49 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:49 [DEBUG] Starting remote scp process:  scp -vt /tmp
+2025/06/02 15:32:49 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:49 [DEBUG] Started SCP session, beginning transfers...
+2025/06/02 15:32:49 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:49 [DEBUG] Copying input data into temporary file so we can read the length
+2025/06/02 15:32:49 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:49 [DEBUG] scp: Uploading script_7536.sh: perms=C0644 size=1800
+2025/06/02 15:32:49 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:49 [DEBUG] SCP session complete, closing stdin pipe.
+2025/06/02 15:32:49 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:49 [DEBUG] Waiting for SSH session to complete.
+2025/06/02 15:32:49 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:49 [DEBUG] scp stderr (length 32): Sink: C0644 1800 script_7536.sh
+2025/06/02 15:32:49 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:49 [DEBUG] Opening new ssh session
+2025/06/02 15:32:49 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:49 [DEBUG] starting remote command: chmod 0755 /tmp/script_7536.sh
+2025/06/02 15:32:49 [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:32:49 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:49 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:32:49 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:32:49 packer.exe plugin: [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:32:49 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:49 [DEBUG] Opening new ssh session
+2025/06/02 15:32:50 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:32:50 [DEBUG] starting remote command: sudo -E bash '/tmp/script_7536.sh'
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: 🔍 1/4 - Actualizando índice APT y dependencias mínimas…
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Reading package lists...
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Building dependency tree...
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Reading state information...
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: ca-certificates is already the newest version (20240203~20.04.1).
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: ca-certificates set to manually installed.
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: curl is already the newest version (7.68.0-1ubuntu2.25).
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: curl set to manually installed.
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: gnupg is already the newest version (2.2.19-3ubuntu2.4).
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: gnupg set to manually installed.
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: The following additional packages will be installed:
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu:   binutils binutils-common binutils-x86-64-linux-gnu cpp cpp-9 dpkg-dev
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu:   fakeroot g++ g++-9 gcc gcc-9 gcc-9-base libalgorithm-diff-perl
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu:   libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan5 libatomic1
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu:   libbinutils libc-dev-bin libc6 libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu:   libctf0 libdpkg-perl libfakeroot libfile-fcntllock-perl libgcc-9-dev
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu:   libgomp1 libisl22 libitm1 liblsan0 libmpc3 libquadmath0 libstdc++-9-dev
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu:   libtsan0 libubsan1 linux-libc-dev make manpages-dev
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Suggested packages:
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu:   binutils-doc cpp-doc gcc-9-locales debian-keyring g++-multilib
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu:   g++-9-multilib gcc-9-doc gcc-multilib autoconf automake libtool flex bison
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu:   gdb gcc-doc gcc-9-multilib glibc-doc bzr libstdc++-9-doc make-doc
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: The following NEW packages will be installed:
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu:   binutils binutils-common binutils-x86-64-linux-gnu build-essential cpp cpp-9
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu:   dpkg-dev fakeroot g++ g++-9 gcc gcc-9 gcc-9-base libalgorithm-diff-perl
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu:   libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan5 libatomic1
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu:   libbinutils libc-dev-bin libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu:   libctf0 libdpkg-perl libfakeroot libfile-fcntllock-perl libgcc-9-dev
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu:   libgomp1 libisl22 libitm1 liblsan0 libmpc3 libquadmath0 libstdc++-9-dev
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu:   libtsan0 libubsan1 linux-libc-dev make manpages-dev
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: The following packages will be upgraded:
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu:   libc6
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: 1 upgraded, 41 newly installed, 0 to remove and 29 not upgraded.
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Need to get 48.1 MB of archives.
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: After this operation, 203 MB of additional disk space will be used.
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Get:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libc6 amd64 2.31-0ubuntu9.18 [2720 kB]
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Get:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 binutils-common amd64 2.34-6ubuntu1.11 [208 kB]
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Get:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libbinutils amd64 2.34-6ubuntu1.11 [475 kB]
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Get:4 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libctf-nobfd0 amd64 2.34-6ubuntu1.11 [48.2 kB]
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Get:5 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libctf0 amd64 2.34-6ubuntu1.11 [46.6 kB]
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Get:6 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.34-6ubuntu1.11 [1612 kB]
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Get:7 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 binutils amd64 2.34-6ubuntu1.11 [3380 B]
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Get:8 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libc-dev-bin amd64 2.31-0ubuntu9.18 [71.7 kB]
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Get:9 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-libc-dev amd64 5.4.0-216.236 [1111 kB]
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Get:10 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/main amd64 libcrypt-dev amd64 1:4.4.10-10ubuntu4 [104 kB]
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Get:11 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libc6-dev amd64 2.31-0ubuntu9.18 [2520 kB]
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Get:12 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 gcc-9-base amd64 9.4.0-1ubuntu1~20.04.2 [18.9 kB]
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Get:13 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/main amd64 libisl22 amd64 0.22.1-1 [592 kB]
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Get:14 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/main amd64 libmpc3 amd64 1.1.0-1 [40.8 kB]
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Get:15 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 cpp-9 amd64 9.4.0-1ubuntu1~20.04.2 [7502 kB]
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Get:16 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/main amd64 cpp amd64 4:9.3.0-1ubuntu2 [27.6 kB]
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Get:17 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libcc1-0 amd64 10.5.0-1ubuntu1~20.04 [48.8 kB]
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Get:18 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libgomp1 amd64 10.5.0-1ubuntu1~20.04 [102 kB]
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Get:19 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libitm1 amd64 10.5.0-1ubuntu1~20.04 [26.2 kB]
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Get:20 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libatomic1 amd64 10.5.0-1ubuntu1~20.04 [9284 B]
+2025/06/02 15:32:50 ui:     amazon-ebs.ubuntu: Get:21 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libasan5 amd64 9.4.0-1ubuntu1~20.04.2 [2752 kB]
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Get:22 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 liblsan0 amd64 10.5.0-1ubuntu1~20.04 [835 kB]
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Get:23 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libtsan0 amd64 10.5.0-1ubuntu1~20.04 [2016 kB]
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Get:24 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libubsan1 amd64 10.5.0-1ubuntu1~20.04 [785 kB]
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Get:25 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libquadmath0 amd64 10.5.0-1ubuntu1~20.04 [146 kB]
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Get:26 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libgcc-9-dev amd64 9.4.0-1ubuntu1~20.04.2 [2359 kB]
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Get:27 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 gcc-9 amd64 9.4.0-1ubuntu1~20.04.2 [8276 kB]
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Get:28 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/main amd64 gcc amd64 4:9.3.0-1ubuntu2 [5208 B]
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Get:29 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libstdc++-9-dev amd64 9.4.0-1ubuntu1~20.04.2 [1722 kB]
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Get:30 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 g++-9 amd64 9.4.0-1ubuntu1~20.04.2 [8421 kB]
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Get:31 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/main amd64 g++ amd64 4:9.3.0-1ubuntu2 [1604 B]
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Get:32 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/main amd64 make amd64 4.2.1-1.2 [162 kB]
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Get:33 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 libdpkg-perl all 1.19.7ubuntu3.2 [231 kB]
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Get:34 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 dpkg-dev all 1.19.7ubuntu3.2 [679 kB]
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Get:35 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates/main amd64 build-essential amd64 12.8ubuntu1.1 [4664 B]
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Get:36 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/main amd64 libfakeroot amd64 1.24-1 [25.7 kB]
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Get:37 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/main amd64 fakeroot amd64 1.24-1 [62.6 kB]
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Get:38 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/main amd64 libalgorithm-diff-perl all 1.19.03-2 [46.6 kB]
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Get:39 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/main amd64 libalgorithm-diff-xs-perl amd64 0.04-6 [11.3 kB]
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Get:40 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/main amd64 libalgorithm-merge-perl all 0.08-3 [12.0 kB]
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Get:41 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/main amd64 libfile-fcntllock-perl amd64 0.22-3build4 [33.1 kB]
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Get:42 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal/main amd64 manpages-dev all 5.05-1 [2266 kB]
+2025/06/02 15:32:51 ui error: ==> amazon-ebs.ubuntu: debconf: unable to initialize frontend: Dialog
+2025/06/02 15:32:51 ui error: ==> amazon-ebs.ubuntu: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+2025/06/02 15:32:51 ui error: ==> amazon-ebs.ubuntu: debconf: falling back to frontend: Readline
+2025/06/02 15:32:51 ui error: ==> amazon-ebs.ubuntu: debconf: unable to initialize frontend: Readline
+2025/06/02 15:32:51 ui error: ==> amazon-ebs.ubuntu: debconf: (This frontend requires a controlling tty.)
+2025/06/02 15:32:51 ui error: ==> amazon-ebs.ubuntu: debconf: falling back to frontend: Teletype
+2025/06/02 15:32:51 ui error: ==> amazon-ebs.ubuntu: dpkg-preconfigure: unable to re-open stdin:
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Fetched 48.1 MB in 1s (64.5 MB/s)
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: (Reading database ... 62429 files and directories currently installed.)
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Preparing to unpack .../libc6_2.31-0ubuntu9.18_amd64.deb ...
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: debconf: unable to initialize frontend: Dialog
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: debconf: falling back to frontend: Readline
+2025/06/02 15:32:51 ui:     amazon-ebs.ubuntu: Unpacking libc6:amd64 (2.31-0ubuntu9.18) over (2.31-0ubuntu9.17) ...
+2025/06/02 15:32:52 ui:     amazon-ebs.ubuntu: Setting up libc6:amd64 (2.31-0ubuntu9.18) ...
+2025/06/02 15:32:52 ui:     amazon-ebs.ubuntu: debconf: unable to initialize frontend: Dialog
+2025/06/02 15:32:52 ui:     amazon-ebs.ubuntu: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+2025/06/02 15:32:52 ui:     amazon-ebs.ubuntu: debconf: falling back to frontend: Readline
+2025/06/02 15:32:52 ui:     amazon-ebs.ubuntu: Selecting previously unselected package binutils-common:amd64.
+2025/06/02 15:32:52 ui:     amazon-ebs.ubuntu: (Reading database ... 62429 files and directories currently installed.)
+2025/06/02 15:32:52 ui:     amazon-ebs.ubuntu: Preparing to unpack .../00-binutils-common_2.34-6ubuntu1.11_amd64.deb ...
+2025/06/02 15:32:52 ui:     amazon-ebs.ubuntu: Unpacking binutils-common:amd64 (2.34-6ubuntu1.11) ...
+2025/06/02 15:32:52 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libbinutils:amd64.
+2025/06/02 15:32:52 ui:     amazon-ebs.ubuntu: Preparing to unpack .../01-libbinutils_2.34-6ubuntu1.11_amd64.deb ...
+2025/06/02 15:32:52 ui:     amazon-ebs.ubuntu: Unpacking libbinutils:amd64 (2.34-6ubuntu1.11) ...
+2025/06/02 15:32:52 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libctf-nobfd0:amd64.
+2025/06/02 15:32:52 ui:     amazon-ebs.ubuntu: Preparing to unpack .../02-libctf-nobfd0_2.34-6ubuntu1.11_amd64.deb ...
+2025/06/02 15:32:52 ui:     amazon-ebs.ubuntu: Unpacking libctf-nobfd0:amd64 (2.34-6ubuntu1.11) ...
+2025/06/02 15:32:53 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libctf0:amd64.
+2025/06/02 15:32:53 ui:     amazon-ebs.ubuntu: Preparing to unpack .../03-libctf0_2.34-6ubuntu1.11_amd64.deb ...
+2025/06/02 15:32:53 ui:     amazon-ebs.ubuntu: Unpacking libctf0:amd64 (2.34-6ubuntu1.11) ...
+2025/06/02 15:32:53 ui:     amazon-ebs.ubuntu: Selecting previously unselected package binutils-x86-64-linux-gnu.
+2025/06/02 15:32:53 ui:     amazon-ebs.ubuntu: Preparing to unpack .../04-binutils-x86-64-linux-gnu_2.34-6ubuntu1.11_amd64.deb ...
+2025/06/02 15:32:53 ui:     amazon-ebs.ubuntu: Unpacking binutils-x86-64-linux-gnu (2.34-6ubuntu1.11) ...
+2025/06/02 15:32:53 ui:     amazon-ebs.ubuntu: Selecting previously unselected package binutils.
+2025/06/02 15:32:53 ui:     amazon-ebs.ubuntu: Preparing to unpack .../05-binutils_2.34-6ubuntu1.11_amd64.deb ...
+2025/06/02 15:32:53 ui:     amazon-ebs.ubuntu: Unpacking binutils (2.34-6ubuntu1.11) ...
+2025/06/02 15:32:53 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libc-dev-bin.
+2025/06/02 15:32:53 ui:     amazon-ebs.ubuntu: Preparing to unpack .../06-libc-dev-bin_2.31-0ubuntu9.18_amd64.deb ...
+2025/06/02 15:32:53 ui:     amazon-ebs.ubuntu: Unpacking libc-dev-bin (2.31-0ubuntu9.18) ...
+2025/06/02 15:32:53 ui:     amazon-ebs.ubuntu: Selecting previously unselected package linux-libc-dev:amd64.
+2025/06/02 15:32:53 ui:     amazon-ebs.ubuntu: Preparing to unpack .../07-linux-libc-dev_5.4.0-216.236_amd64.deb ...
+2025/06/02 15:32:53 ui:     amazon-ebs.ubuntu: Unpacking linux-libc-dev:amd64 (5.4.0-216.236) ...
+2025/06/02 15:32:53 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libcrypt-dev:amd64.
+2025/06/02 15:32:53 ui:     amazon-ebs.ubuntu: Preparing to unpack .../08-libcrypt-dev_1%3a4.4.10-10ubuntu4_amd64.deb ...
+2025/06/02 15:32:53 ui:     amazon-ebs.ubuntu: Unpacking libcrypt-dev:amd64 (1:4.4.10-10ubuntu4) ...
+2025/06/02 15:32:53 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libc6-dev:amd64.
+2025/06/02 15:32:53 ui:     amazon-ebs.ubuntu: Preparing to unpack .../09-libc6-dev_2.31-0ubuntu9.18_amd64.deb ...
+2025/06/02 15:32:53 ui:     amazon-ebs.ubuntu: Unpacking libc6-dev:amd64 (2.31-0ubuntu9.18) ...
+2025/06/02 15:32:54 ui:     amazon-ebs.ubuntu: Selecting previously unselected package gcc-9-base:amd64.
+2025/06/02 15:32:54 ui:     amazon-ebs.ubuntu: Preparing to unpack .../10-gcc-9-base_9.4.0-1ubuntu1~20.04.2_amd64.deb ...
+2025/06/02 15:32:54 ui:     amazon-ebs.ubuntu: Unpacking gcc-9-base:amd64 (9.4.0-1ubuntu1~20.04.2) ...
+2025/06/02 15:32:54 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libisl22:amd64.
+2025/06/02 15:32:54 ui:     amazon-ebs.ubuntu: Preparing to unpack .../11-libisl22_0.22.1-1_amd64.deb ...
+2025/06/02 15:32:54 ui:     amazon-ebs.ubuntu: Unpacking libisl22:amd64 (0.22.1-1) ...
+2025/06/02 15:32:54 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libmpc3:amd64.
+2025/06/02 15:32:54 ui:     amazon-ebs.ubuntu: Preparing to unpack .../12-libmpc3_1.1.0-1_amd64.deb ...
+2025/06/02 15:32:54 ui:     amazon-ebs.ubuntu: Unpacking libmpc3:amd64 (1.1.0-1) ...
+2025/06/02 15:32:54 ui:     amazon-ebs.ubuntu: Selecting previously unselected package cpp-9.
+2025/06/02 15:32:54 ui:     amazon-ebs.ubuntu: Preparing to unpack .../13-cpp-9_9.4.0-1ubuntu1~20.04.2_amd64.deb ...
+2025/06/02 15:32:54 ui:     amazon-ebs.ubuntu: Unpacking cpp-9 (9.4.0-1ubuntu1~20.04.2) ...
+2025/06/02 15:32:55 ui:     amazon-ebs.ubuntu: Selecting previously unselected package cpp.
+2025/06/02 15:32:55 ui:     amazon-ebs.ubuntu: Preparing to unpack .../14-cpp_4%3a9.3.0-1ubuntu2_amd64.deb ...
+2025/06/02 15:32:55 ui:     amazon-ebs.ubuntu: Unpacking cpp (4:9.3.0-1ubuntu2) ...
+2025/06/02 15:32:55 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libcc1-0:amd64.
+2025/06/02 15:32:55 ui:     amazon-ebs.ubuntu: Preparing to unpack .../15-libcc1-0_10.5.0-1ubuntu1~20.04_amd64.deb ...
+2025/06/02 15:32:55 ui:     amazon-ebs.ubuntu: Unpacking libcc1-0:amd64 (10.5.0-1ubuntu1~20.04) ...
+2025/06/02 15:32:55 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libgomp1:amd64.
+2025/06/02 15:32:55 ui:     amazon-ebs.ubuntu: Preparing to unpack .../16-libgomp1_10.5.0-1ubuntu1~20.04_amd64.deb ...
+2025/06/02 15:32:55 ui:     amazon-ebs.ubuntu: Unpacking libgomp1:amd64 (10.5.0-1ubuntu1~20.04) ...
+2025/06/02 15:32:55 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libitm1:amd64.
+2025/06/02 15:32:55 ui:     amazon-ebs.ubuntu: Preparing to unpack .../17-libitm1_10.5.0-1ubuntu1~20.04_amd64.deb ...
+2025/06/02 15:32:55 ui:     amazon-ebs.ubuntu: Unpacking libitm1:amd64 (10.5.0-1ubuntu1~20.04) ...
+2025/06/02 15:32:55 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libatomic1:amd64.
+2025/06/02 15:32:55 ui:     amazon-ebs.ubuntu: Preparing to unpack .../18-libatomic1_10.5.0-1ubuntu1~20.04_amd64.deb ...
+2025/06/02 15:32:55 ui:     amazon-ebs.ubuntu: Unpacking libatomic1:amd64 (10.5.0-1ubuntu1~20.04) ...
+2025/06/02 15:32:55 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libasan5:amd64.
+2025/06/02 15:32:55 ui:     amazon-ebs.ubuntu: Preparing to unpack .../19-libasan5_9.4.0-1ubuntu1~20.04.2_amd64.deb ...
+2025/06/02 15:32:55 ui:     amazon-ebs.ubuntu: Unpacking libasan5:amd64 (9.4.0-1ubuntu1~20.04.2) ...
+2025/06/02 15:32:55 ui:     amazon-ebs.ubuntu: Selecting previously unselected package liblsan0:amd64.
+2025/06/02 15:32:55 ui:     amazon-ebs.ubuntu: Preparing to unpack .../20-liblsan0_10.5.0-1ubuntu1~20.04_amd64.deb ...
+2025/06/02 15:32:55 ui:     amazon-ebs.ubuntu: Unpacking liblsan0:amd64 (10.5.0-1ubuntu1~20.04) ...
+2025/06/02 15:32:56 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libtsan0:amd64.
+2025/06/02 15:32:56 ui:     amazon-ebs.ubuntu: Preparing to unpack .../21-libtsan0_10.5.0-1ubuntu1~20.04_amd64.deb ...
+2025/06/02 15:32:56 ui:     amazon-ebs.ubuntu: Unpacking libtsan0:amd64 (10.5.0-1ubuntu1~20.04) ...
+2025/06/02 15:32:56 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libubsan1:amd64.
+2025/06/02 15:32:56 ui:     amazon-ebs.ubuntu: Preparing to unpack .../22-libubsan1_10.5.0-1ubuntu1~20.04_amd64.deb ...
+2025/06/02 15:32:56 ui:     amazon-ebs.ubuntu: Unpacking libubsan1:amd64 (10.5.0-1ubuntu1~20.04) ...
+2025/06/02 15:32:56 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libquadmath0:amd64.
+2025/06/02 15:32:56 ui:     amazon-ebs.ubuntu: Preparing to unpack .../23-libquadmath0_10.5.0-1ubuntu1~20.04_amd64.deb ...
+2025/06/02 15:32:56 ui:     amazon-ebs.ubuntu: Unpacking libquadmath0:amd64 (10.5.0-1ubuntu1~20.04) ...
+2025/06/02 15:32:56 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libgcc-9-dev:amd64.
+2025/06/02 15:32:56 ui:     amazon-ebs.ubuntu: Preparing to unpack .../24-libgcc-9-dev_9.4.0-1ubuntu1~20.04.2_amd64.deb ...
+2025/06/02 15:32:56 ui:     amazon-ebs.ubuntu: Unpacking libgcc-9-dev:amd64 (9.4.0-1ubuntu1~20.04.2) ...
+2025/06/02 15:32:56 ui:     amazon-ebs.ubuntu: Selecting previously unselected package gcc-9.
+2025/06/02 15:32:56 ui:     amazon-ebs.ubuntu: Preparing to unpack .../25-gcc-9_9.4.0-1ubuntu1~20.04.2_amd64.deb ...
+2025/06/02 15:32:56 ui:     amazon-ebs.ubuntu: Unpacking gcc-9 (9.4.0-1ubuntu1~20.04.2) ...
+2025/06/02 15:32:57 ui:     amazon-ebs.ubuntu: Selecting previously unselected package gcc.
+2025/06/02 15:32:57 ui:     amazon-ebs.ubuntu: Preparing to unpack .../26-gcc_4%3a9.3.0-1ubuntu2_amd64.deb ...
+2025/06/02 15:32:57 ui:     amazon-ebs.ubuntu: Unpacking gcc (4:9.3.0-1ubuntu2) ...
+2025/06/02 15:32:57 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libstdc++-9-dev:amd64.
+2025/06/02 15:32:57 ui:     amazon-ebs.ubuntu: Preparing to unpack .../27-libstdc++-9-dev_9.4.0-1ubuntu1~20.04.2_amd64.deb ...
+2025/06/02 15:32:57 ui:     amazon-ebs.ubuntu: Unpacking libstdc++-9-dev:amd64 (9.4.0-1ubuntu1~20.04.2) ...
+2025/06/02 15:32:58 ui:     amazon-ebs.ubuntu: Selecting previously unselected package g++-9.
+2025/06/02 15:32:58 ui:     amazon-ebs.ubuntu: Preparing to unpack .../28-g++-9_9.4.0-1ubuntu1~20.04.2_amd64.deb ...
+2025/06/02 15:32:58 ui:     amazon-ebs.ubuntu: Unpacking g++-9 (9.4.0-1ubuntu1~20.04.2) ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Selecting previously unselected package g++.
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Preparing to unpack .../29-g++_4%3a9.3.0-1ubuntu2_amd64.deb ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Unpacking g++ (4:9.3.0-1ubuntu2) ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Selecting previously unselected package make.
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Preparing to unpack .../30-make_4.2.1-1.2_amd64.deb ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Unpacking make (4.2.1-1.2) ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libdpkg-perl.
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Preparing to unpack .../31-libdpkg-perl_1.19.7ubuntu3.2_all.deb ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Unpacking libdpkg-perl (1.19.7ubuntu3.2) ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Selecting previously unselected package dpkg-dev.
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Preparing to unpack .../32-dpkg-dev_1.19.7ubuntu3.2_all.deb ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Unpacking dpkg-dev (1.19.7ubuntu3.2) ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Selecting previously unselected package build-essential.
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Preparing to unpack .../33-build-essential_12.8ubuntu1.1_amd64.deb ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Unpacking build-essential (12.8ubuntu1.1) ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libfakeroot:amd64.
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Preparing to unpack .../34-libfakeroot_1.24-1_amd64.deb ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Unpacking libfakeroot:amd64 (1.24-1) ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Selecting previously unselected package fakeroot.
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Preparing to unpack .../35-fakeroot_1.24-1_amd64.deb ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Unpacking fakeroot (1.24-1) ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libalgorithm-diff-perl.
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Preparing to unpack .../36-libalgorithm-diff-perl_1.19.03-2_all.deb ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Unpacking libalgorithm-diff-perl (1.19.03-2) ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libalgorithm-diff-xs-perl.
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Preparing to unpack .../37-libalgorithm-diff-xs-perl_0.04-6_amd64.deb ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Unpacking libalgorithm-diff-xs-perl (0.04-6) ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libalgorithm-merge-perl.
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Preparing to unpack .../38-libalgorithm-merge-perl_0.08-3_all.deb ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Unpacking libalgorithm-merge-perl (0.08-3) ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Selecting previously unselected package libfile-fcntllock-perl.
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Preparing to unpack .../39-libfile-fcntllock-perl_0.22-3build4_amd64.deb ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Unpacking libfile-fcntllock-perl (0.22-3build4) ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Selecting previously unselected package manpages-dev.
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Preparing to unpack .../40-manpages-dev_5.05-1_all.deb ...
+2025/06/02 15:32:59 ui:     amazon-ebs.ubuntu: Unpacking manpages-dev (5.05-1) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up manpages-dev (5.05-1) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up libfile-fcntllock-perl (0.22-3build4) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up libalgorithm-diff-perl (1.19.03-2) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up binutils-common:amd64 (2.34-6ubuntu1.11) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up linux-libc-dev:amd64 (5.4.0-216.236) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up libctf-nobfd0:amd64 (2.34-6ubuntu1.11) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up libgomp1:amd64 (10.5.0-1ubuntu1~20.04) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up libfakeroot:amd64 (1.24-1) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up fakeroot (1.24-1) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up make (4.2.1-1.2) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up libquadmath0:amd64 (10.5.0-1ubuntu1~20.04) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up libmpc3:amd64 (1.1.0-1) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up libatomic1:amd64 (10.5.0-1ubuntu1~20.04) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up libdpkg-perl (1.19.7ubuntu3.2) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up libubsan1:amd64 (10.5.0-1ubuntu1~20.04) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up libcrypt-dev:amd64 (1:4.4.10-10ubuntu4) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up libisl22:amd64 (0.22.1-1) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up libbinutils:amd64 (2.34-6ubuntu1.11) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up libc-dev-bin (2.31-0ubuntu9.18) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up libalgorithm-diff-xs-perl (0.04-6) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up libcc1-0:amd64 (10.5.0-1ubuntu1~20.04) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up liblsan0:amd64 (10.5.0-1ubuntu1~20.04) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up libitm1:amd64 (10.5.0-1ubuntu1~20.04) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up gcc-9-base:amd64 (9.4.0-1ubuntu1~20.04.2) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up libalgorithm-merge-perl (0.08-3) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up libtsan0:amd64 (10.5.0-1ubuntu1~20.04) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up libctf0:amd64 (2.34-6ubuntu1.11) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up libasan5:amd64 (9.4.0-1ubuntu1~20.04.2) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up cpp-9 (9.4.0-1ubuntu1~20.04.2) ...
+2025/06/02 15:33:00 ui:     amazon-ebs.ubuntu: Setting up libc6-dev:amd64 (2.31-0ubuntu9.18) ...
+2025/06/02 15:33:01 ui:     amazon-ebs.ubuntu: Setting up binutils-x86-64-linux-gnu (2.34-6ubuntu1.11) ...
+2025/06/02 15:33:01 ui:     amazon-ebs.ubuntu: Setting up binutils (2.34-6ubuntu1.11) ...
+2025/06/02 15:33:01 ui:     amazon-ebs.ubuntu: Setting up dpkg-dev (1.19.7ubuntu3.2) ...
+2025/06/02 15:33:01 ui:     amazon-ebs.ubuntu: Setting up libgcc-9-dev:amd64 (9.4.0-1ubuntu1~20.04.2) ...
+2025/06/02 15:33:01 ui:     amazon-ebs.ubuntu: Setting up cpp (4:9.3.0-1ubuntu2) ...
+2025/06/02 15:33:01 ui:     amazon-ebs.ubuntu: Setting up gcc-9 (9.4.0-1ubuntu1~20.04.2) ...
+2025/06/02 15:33:01 ui:     amazon-ebs.ubuntu: Setting up libstdc++-9-dev:amd64 (9.4.0-1ubuntu1~20.04.2) ...
+2025/06/02 15:33:01 ui:     amazon-ebs.ubuntu: Setting up gcc (4:9.3.0-1ubuntu2) ...
+2025/06/02 15:33:01 ui:     amazon-ebs.ubuntu: Setting up g++-9 (9.4.0-1ubuntu1~20.04.2) ...
+2025/06/02 15:33:01 ui:     amazon-ebs.ubuntu: Setting up g++ (4:9.3.0-1ubuntu2) ...
+2025/06/02 15:33:01 ui:     amazon-ebs.ubuntu: update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+2025/06/02 15:33:01 ui:     amazon-ebs.ubuntu: Setting up build-essential (12.8ubuntu1.1) ...
+2025/06/02 15:33:01 ui:     amazon-ebs.ubuntu: Processing triggers for man-db (2.9.1-1) ...
+2025/06/02 15:33:15 ui:     amazon-ebs.ubuntu: Processing triggers for libc-bin (2.31-0ubuntu9.17) ...
+2025/06/02 15:33:17 ui:     amazon-ebs.ubuntu: 🔑 2/4 - Importando GPG y añadiendo repo NodeSource 20.x…
+2025/06/02 15:33:17 ui:     amazon-ebs.ubuntu: 📦 3/4 - Instalando Node.js 20.x
+2025/06/02 15:33:17 ui:     amazon-ebs.ubuntu: Hit:1 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal InRelease
+2025/06/02 15:33:17 ui:     amazon-ebs.ubuntu: Hit:2 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-updates InRelease
+2025/06/02 15:33:17 ui:     amazon-ebs.ubuntu: Hit:3 http://us-east-2.ec2.archive.ubuntu.com/ubuntu focal-backports InRelease
+2025/06/02 15:33:17 ui:     amazon-ebs.ubuntu: Hit:4 http://security.ubuntu.com/ubuntu focal-security InRelease
+2025/06/02 15:33:17 ui:     amazon-ebs.ubuntu: Get:5 https://deb.nodesource.com/node_20.x focal InRelease [4583 B]
+2025/06/02 15:33:18 ui:     amazon-ebs.ubuntu: Get:6 https://deb.nodesource.com/node_20.x focal/main amd64 Packages [775 B]
+2025/06/02 15:33:18 ui:     amazon-ebs.ubuntu: Fetched 5358 B in 1s (7932 B/s)
+2025/06/02 15:33:19 ui:     amazon-ebs.ubuntu: Reading package lists...
+2025/06/02 15:33:19 ui:     amazon-ebs.ubuntu: Reading package lists...
+2025/06/02 15:33:20 ui:     amazon-ebs.ubuntu: Building dependency tree...
+2025/06/02 15:33:20 ui:     amazon-ebs.ubuntu: Reading state information...
+2025/06/02 15:33:20 ui:     amazon-ebs.ubuntu: The following NEW packages will be installed:
+2025/06/02 15:33:20 ui:     amazon-ebs.ubuntu:   nodejs
+2025/06/02 15:33:20 ui:     amazon-ebs.ubuntu: 0 upgraded, 1 newly installed, 0 to remove and 29 not upgraded.
+2025/06/02 15:33:20 ui:     amazon-ebs.ubuntu: Need to get 30.3 MB of archives.
+2025/06/02 15:33:20 ui:     amazon-ebs.ubuntu: After this operation, 194 MB of additional disk space will be used.
+2025/06/02 15:33:20 ui:     amazon-ebs.ubuntu: Get:1 https://deb.nodesource.com/node_20.x focal/main amd64 nodejs amd64 20.5.1-deb-1nodesource1 [30.3 MB]
+2025/06/02 15:33:21 ui error: ==> amazon-ebs.ubuntu: debconf: unable to initialize frontend: Dialog
+2025/06/02 15:33:21 ui error: ==> amazon-ebs.ubuntu: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+2025/06/02 15:33:21 ui error: ==> amazon-ebs.ubuntu: debconf: falling back to frontend: Readline
+2025/06/02 15:33:21 ui error: ==> amazon-ebs.ubuntu: debconf: unable to initialize frontend: Readline
+2025/06/02 15:33:21 ui error: ==> amazon-ebs.ubuntu: debconf: (This frontend requires a controlling tty.)
+2025/06/02 15:33:21 ui error: ==> amazon-ebs.ubuntu: debconf: falling back to frontend: Teletype
+2025/06/02 15:33:21 ui error: ==> amazon-ebs.ubuntu: dpkg-preconfigure: unable to re-open stdin:
+2025/06/02 15:33:21 ui:     amazon-ebs.ubuntu: Fetched 30.3 MB in 1s (43.1 MB/s)
+2025/06/02 15:33:21 ui:     amazon-ebs.ubuntu: Selecting previously unselected package nodejs.
+2025/06/02 15:33:21 ui:     amazon-ebs.ubuntu: (Reading database ... 68048 files and directories currently installed.)
+2025/06/02 15:33:21 ui:     amazon-ebs.ubuntu: Preparing to unpack .../nodejs_20.5.1-deb-1nodesource1_amd64.deb ...
+2025/06/02 15:33:21 ui:     amazon-ebs.ubuntu: Unpacking nodejs (20.5.1-deb-1nodesource1) ...
+2025/06/02 15:33:25 ui:     amazon-ebs.ubuntu: Setting up nodejs (20.5.1-deb-1nodesource1) ...
+2025/06/02 15:33:25 ui:     amazon-ebs.ubuntu: Processing triggers for man-db (2.9.1-1) ...
+2025/06/02 15:33:27 ui:     amazon-ebs.ubuntu: ✅    Node v20.5.1 y npm 9.8.0 instalados.
+2025/06/02 15:33:27 ui:     amazon-ebs.ubuntu: 🚀 4/4 - Instalando PM2 globalmente…
+2025/06/02 15:33:34 ui:     amazon-ebs.ubuntu:
+2025/06/02 15:33:34 ui:     amazon-ebs.ubuntu: added 135 packages in 7s
+2025/06/02 15:33:34 ui:     amazon-ebs.ubuntu:
+2025/06/02 15:33:34 ui error: ==> amazon-ebs.ubuntu: npm notice
+2025/06/02 15:33:34 ui:     amazon-ebs.ubuntu: 13 packages are looking for funding
+2025/06/02 15:33:34 ui error: ==> amazon-ebs.ubuntu: npm notice New major version of npm available! 9.8.0 -> 11.4.1
+2025/06/02 15:33:34 ui:     amazon-ebs.ubuntu:   run `npm fund` for details
+2025/06/02 15:33:34 ui error: ==> amazon-ebs.ubuntu: npm notice Changelog: <https://github.com/npm/cli/releases/tag/v11.4.1>
+2025/06/02 15:33:34 ui error: ==> amazon-ebs.ubuntu: npm notice Run `npm install -g npm@11.4.1` to update!
+2025/06/02 15:33:34 ui error: ==> amazon-ebs.ubuntu: npm notice
+2025/06/02 15:33:34 ui:     amazon-ebs.ubuntu: 🎉 Instalación completada.
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:      > pm2 -v  ->
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:                         -------------
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu: __/\\\\\\\\\\\\\____/\\\\____________/\\\\____/\\\\\\\\\_____
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:  _\/\\\/////////\\\_\/\\\\\\________/\\\\\\__/\\\///////\\\___
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:   _\/\\\_______\/\\\_\/\\\//\\\____/\\\//\\\_\///______\//\\\__
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:    _\/\\\\\\\\\\\\\/__\/\\\\///\\\/\\\/_\/\\\___________/\\\/___
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:     _\/\\\/////////____\/\\\__\///\\\/___\/\\\________/\\\//_____
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:      _\/\\\_____________\/\\\____\///_____\/\\\_____/\\\//________
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:       _\/\\\_____________\/\\\_____________\/\\\___/\\\/___________
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:        _\/\\\_____________\/\\\_____________\/\\\__/\\\\\\\\\\\\\\\_
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:         _\///______________\///______________\///__\///////////////__
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:                           Runtime Edition
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:         PM2 is a Production Process Manager for Node.js applications
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:                      with a built-in Load Balancer.
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:                 Start and Daemonize any application:
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:                 $ pm2 start app.js
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:                 Load Balance 4 instances of api.js:
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:                 $ pm2 start api.js -i 4
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:                 Monitor in production:
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:                 $ pm2 monitor
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:                 Make pm2 auto-boot at server restart:
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:                 $ pm2 startup
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:                 To go further checkout:
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:                 http://pm2.io/
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:                         -------------
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu: [PM2] Spawning PM2 daemon with pm2_home=/home/ubuntu/.pm2
+2025/06/02 15:33:35 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:35 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:33:35 [INFO] 22006 bytes written for 'stdout'
+2025/06/02 15:33:35 [INFO] 1015 bytes written for 'stderr'
+2025/06/02 15:33:35 [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:33:35 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu: [PM2] PM2 Successfully daemonized
+2025/06/02 15:33:35 packer.exe plugin: [INFO] 22006 bytes written for 'stdout'
+2025/06/02 15:33:35 packer.exe plugin: [INFO] 1015 bytes written for 'stderr'
+2025/06/02 15:33:35 packer.exe plugin: [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu: 6.0.6
+2025/06/02 15:33:35 ui:     amazon-ebs.ubuntu:      > Para arranque al boot: sudo pm2 startup systemd -u root --hp /home/ubuntu && pm2 save
+2025/06/02 15:33:35 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:35 [DEBUG] Opening new ssh session
+2025/06/02 15:33:35 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:35 [DEBUG] starting remote command: rm -f /tmp/script_7536.sh
+2025/06/02 15:33:35 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:35 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:33:35 [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:33:35 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:33:35 packer.exe plugin: [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:33:35 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:35 [DEBUG] Opening new ssh session
+2025/06/02 15:33:35 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:35 [DEBUG] starting remote command: rm -f
+2025/06/02 15:33:35 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:35 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:33:35 [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:33:35 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:33:35 packer.exe plugin: [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:33:35 [INFO] (telemetry) ending shell
+2025/06/02 15:33:35 [INFO] (telemetry) Starting provisioner shell
+2025/06/02 15:33:35 packer.exe plugin: [DEBUG] - common: sending ConfigSpec as protobuf
+2025/06/02 15:33:35 [DEBUG] - common: receiving ConfigSpec as protobuf
+2025/06/02 15:33:35 ui: ==> amazon-ebs.ubuntu: Provisioning with shell script: dependencies/deploy_app.sh
+2025/06/02 15:33:35 packer.exe plugin: Opening dependencies/deploy_app.sh for reading
+2025/06/02 15:33:35 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:35 [DEBUG] Opening new ssh session
+2025/06/02 15:33:35 packer.exe plugin: [INFO] 2110 bytes written for 'uploadData'
+2025/06/02 15:33:35 [INFO] 2110 bytes written for 'uploadData'
+2025/06/02 15:33:35 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:35 [DEBUG] Starting remote scp process:  scp -vt /tmp
+2025/06/02 15:33:35 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:35 [DEBUG] Started SCP session, beginning transfers...
+2025/06/02 15:33:35 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:35 [DEBUG] Copying input data into temporary file so we can read the length
+2025/06/02 15:33:35 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:35 [DEBUG] scp: Uploading script_2348.sh: perms=C0644 size=2110
+2025/06/02 15:33:35 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:35 [DEBUG] SCP session complete, closing stdin pipe.
+2025/06/02 15:33:35 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:35 [DEBUG] Waiting for SSH session to complete.
+2025/06/02 15:33:35 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:35 [DEBUG] scp stderr (length 32): Sink: C0644 2110 script_2348.sh
+2025/06/02 15:33:35 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:35 [DEBUG] Opening new ssh session
+2025/06/02 15:33:35 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:35 [DEBUG] starting remote command: chmod 0755 /tmp/script_2348.sh
+2025/06/02 15:33:36 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:36 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:33:36 [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:33:36 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:33:36 packer.exe plugin: [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:33:36 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:36 [DEBUG] Opening new ssh session
+2025/06/02 15:33:36 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:36 [DEBUG] starting remote command: sudo -E bash '/tmp/script_2348.sh'
+2025/06/02 15:33:36 ui:     amazon-ebs.ubuntu: [PM2] Starting /opt/myapp/app.js in fork_mode (1 instance)
+2025/06/02 15:33:36 ui:     amazon-ebs.ubuntu: [PM2] Done.
+2025/06/02 15:33:36 ui:     amazon-ebs.ubuntu: ┌────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+2025/06/02 15:33:36 ui:     amazon-ebs.ubuntu: │ id │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+2025/06/02 15:33:36 ui:     amazon-ebs.ubuntu: ├────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+2025/06/02 15:33:36 ui:     amazon-ebs.ubuntu: │ 0  │ ADC-app    │ default     │ N/A     │ fork    │ 8925     │ 0s     │ 0    │ online    │ 0%       │ 29.1mb   │ root     │ disabled │
+2025/06/02 15:33:36 ui:     amazon-ebs.ubuntu: └────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+2025/06/02 15:33:36 ui:     amazon-ebs.ubuntu: [PM2] Saving current process list...
+2025/06/02 15:33:36 ui:     amazon-ebs.ubuntu: [PM2] Successfully saved in /home/ubuntu/.pm2/dump.pm2
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: [PM2] Init System found: systemd
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: Platform systemd
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: Template
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: [Unit]
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: Description=PM2 process manager
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: Documentation=https://pm2.keymetrics.io/
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: After=network.target
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu:
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: [Service]
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: Type=forking
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: User=root
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: LimitNOFILE=infinity
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: LimitNPROC=infinity
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: LimitCORE=infinity
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: Environment=PM2_HOME=/home/ubuntu/.pm2
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: PIDFile=/home/ubuntu/.pm2/pm2.pid
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: Restart=on-failure
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu:
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: ExecStart=/usr/lib/node_modules/pm2/bin/pm2 resurrect
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: ExecReload=/usr/lib/node_modules/pm2/bin/pm2 reload all
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: ExecStop=/usr/lib/node_modules/pm2/bin/pm2 kill
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu:
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: [Install]
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: WantedBy=multi-user.target
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu:
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: Target path
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: /etc/systemd/system/pm2-root.service
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: Command list
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: [ 'systemctl enable pm2-root' ]
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: [PM2] Writing init configuration in /etc/systemd/system/pm2-root.service
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: [PM2] Making script booting at startup...
+2025/06/02 15:33:37 ui error: ==> amazon-ebs.ubuntu: Created symlink /etc/systemd/system/multi-user.target.wants/pm2-root.service → /etc/systemd/system/pm2-root.service.
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: [PM2] [-] Executing: systemctl enable pm2-root...
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: [PM2] [v] Command successfully executed.
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: +---------------------------------------+
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: [PM2] Freeze a process list on reboot via:
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: $ pm2 save
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu:
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: [PM2] Remove init script via:
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: $ pm2 unstartup systemd
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: ⏳ Esperando al servidor en :3000...
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: ✅ Servidor arriba en 1s
+2025/06/02 15:33:37 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:37 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:33:37 [INFO] 2977 bytes written for 'stdout'
+2025/06/02 15:33:37 [INFO] 119 bytes written for 'stderr'
+2025/06/02 15:33:37 [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:33:37 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:33:37 ui:     amazon-ebs.ubuntu: Respuesta del servidor: Son las 6/2/2025, 9:33:36 PM
+2025/06/02 15:33:37 packer.exe plugin: [INFO] 119 bytes written for 'stderr'
+2025/06/02 15:33:37 packer.exe plugin: [INFO] 2977 bytes written for 'stdout'
+2025/06/02 15:33:37 packer.exe plugin: [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:33:37 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:37 [DEBUG] Opening new ssh session
+2025/06/02 15:33:37 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:37 [DEBUG] starting remote command: rm -f /tmp/script_2348.sh
+2025/06/02 15:33:38 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:38 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:33:38 [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:33:38 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:33:38 packer.exe plugin: [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:33:38 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:38 [DEBUG] Opening new ssh session
+2025/06/02 15:33:38 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:38 [DEBUG] starting remote command: rm -f
+2025/06/02 15:33:38 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:33:38 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:33:38 [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:33:38 [INFO] RPC endpoint: Communicator ended with: 0
+2025/06/02 15:33:38 packer.exe plugin: [INFO] RPC client: Communicator ended with: 0
+2025/06/02 15:33:38 [INFO] (telemetry) ending shell
+2025/06/02 15:33:38 ui: ==> amazon-ebs.ubuntu: Stopping the source instance...
+2025/06/02 15:33:38 ui:     amazon-ebs.ubuntu: Stopping instance
+2025/06/02 15:33:38 ui: ==> amazon-ebs.ubuntu: Waiting for the instance to stop...
+2025/06/02 15:34:25 ui: ==> amazon-ebs.ubuntu: Creating AMI ADC-nodejs-nginx-app-1748899902 from instance i-0072ccfbe2f8e6713
+2025/06/02 15:34:26 ui:     amazon-ebs.ubuntu: AMI: ami-0d3f2f6056e753e1e
+2025/06/02 15:34:26 ui: ==> amazon-ebs.ubuntu: Waiting for AMI to become ready...
+2025/06/02 15:37:34 packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe plugin: 2025/06/02 15:37:34 fast-boot disabled, no launch-template to set
+2025/06/02 15:37:34 ui: ==> amazon-ebs.ubuntu: Skipping Enable AMI deprecation...
+2025/06/02 15:37:34 ui: ==> amazon-ebs.ubuntu: Skipping Enable AMI deregistration protection...
+2025/06/02 15:37:34 ui: ==> amazon-ebs.ubuntu: Modifying attributes on AMI (ami-0d3f2f6056e753e1e)...
+2025/06/02 15:37:34 ui:     amazon-ebs.ubuntu: Modifying: description
+2025/06/02 15:37:35 ui: ==> amazon-ebs.ubuntu: Modifying attributes on snapshot (snap-0e6d549c05ae2baa9)...
+2025/06/02 15:37:35 ui: ==> amazon-ebs.ubuntu: Modifying attributes on snapshot (snap-0ce6bf0e3dadfa52e)...
+2025/06/02 15:37:35 ui: ==> amazon-ebs.ubuntu: Adding tags to AMI (ami-0d3f2f6056e753e1e)...
+2025/06/02 15:37:35 ui: ==> amazon-ebs.ubuntu: Tagging snapshot: snap-0e6d549c05ae2baa9
+2025/06/02 15:37:35 ui: ==> amazon-ebs.ubuntu: Tagging snapshot: snap-0ce6bf0e3dadfa52e
+2025/06/02 15:37:35 ui: ==> amazon-ebs.ubuntu: Creating AMI tags
+2025/06/02 15:37:35 ui:     amazon-ebs.ubuntu: Adding tag: "Environment": "Production"
+2025/06/02 15:37:35 ui:     amazon-ebs.ubuntu: Adding tag: "Name": "NodeJS-Nginx-App"
+2025/06/02 15:37:35 ui:     amazon-ebs.ubuntu: Adding tag: "Builder": "Packer"
+2025/06/02 15:37:35 ui: ==> amazon-ebs.ubuntu: Creating snapshot tags
+2025/06/02 15:37:36 ui: ==> amazon-ebs.ubuntu: Terminating the source AWS instance...
+2025/06/02 15:37:53 ui: ==> amazon-ebs.ubuntu: Cleaning up any extra volumes...
+2025/06/02 15:37:53 ui: ==> amazon-ebs.ubuntu: No volumes to clean up, skipping
+2025/06/02 15:37:53 ui: ==> amazon-ebs.ubuntu: Deleting temporary security group...
+2025/06/02 15:37:54 ui: ==> amazon-ebs.ubuntu: Deleting temporary keypair...
+2025/06/02 15:37:54 [INFO] (telemetry) ending amazon-ebs.ubuntu
+2025/06/02 15:37:54 ui: ==> amazon-ebs.ubuntu: Running post-processor:  (type manifest)
+2025/06/02 15:37:54 [INFO] (telemetry) Starting post-processor manifest
+2025/06/02 15:37:54 packer.exe plugin: [DEBUG] - common: sending ConfigSpec as protobuf
+2025/06/02 15:37:54 [DEBUG] - common: receiving ConfigSpec as protobuf
+2025/06/02 15:37:55 packer.exe plugin: Error locking manifest file for reading and writing. Will sleep and retry. open packer-manifest.json.lock: The file exists.
+2025/06/02 15:37:55 packer.exe plugin: Error locking manifest file for reading and writing. Will sleep and retry. open packer-manifest.json.lock: The file exists.
+2025/06/02 15:37:55 packer.exe plugin: Error locking manifest file for reading and writing. Will sleep and retry. open packer-manifest.json.lock: The file exists.
+2025/06/02 15:37:55 [INFO] (telemetry) ending manifest
+2025/06/02 15:37:55 Flagging to keep original artifact from post-processor 'manifest'
+2025/06/02 15:37:55 ui: Build 'amazon-ebs.ubuntu' finished after 6 minutes 12 seconds.
+2025/06/02 15:37:55 ui: 
+==> Wait completed after 6 minutes 12 seconds
+2025/06/02 15:37:55 ui: 
+==> Builds finished. The artifacts of successful builds are:
+2025/06/02 15:37:55 machine readable: amazon-ebs.ubuntu,artifact-count []string{"2"}
+2025/06/02 15:37:55 machine readable: amazon-ebs.ubuntu,artifact []string{"0", "builder-id", "mitchellh.amazonebs"}
+2025/06/02 15:37:55 machine readable: amazon-ebs.ubuntu,artifact []string{"0", "id", "us-east-2:ami-0d3f2f6056e753e1e"}
+2025/06/02 15:37:55 machine readable: amazon-ebs.ubuntu,artifact []string{"0", "string", "AMIs were created:\nus-east-2: ami-0d3f2f6056e753e1e\n"}
+2025/06/02 15:37:55 machine readable: amazon-ebs.ubuntu,artifact []string{"0", "files-count", "0"}
+2025/06/02 15:37:55 machine readable: amazon-ebs.ubuntu,artifact []string{"0", "end"}
+2025/06/02 15:37:55 ui: --> amazon-ebs.ubuntu: AMIs were created:
+us-east-2: ami-0d3f2f6056e753e1e
+2025/06/02 15:37:55 machine readable: amazon-ebs.ubuntu,artifact []string{"1", "builder-id", "mitchellh.amazonebs"}
+2025/06/02 15:37:55 machine readable: amazon-ebs.ubuntu,artifact []string{"1", "id", "us-east-2:ami-0d3f2f6056e753e1e"}
+2025/06/02 15:37:55 machine readable: amazon-ebs.ubuntu,artifact []string{"1", "string", "AMIs were created:\nus-east-2: ami-0d3f2f6056e753e1e\n"}
+2025/06/02 15:37:55 machine readable: amazon-ebs.ubuntu,artifact []string{"1", "files-count", "0"}
+2025/06/02 15:37:55 machine readable: amazon-ebs.ubuntu,artifact []string{"1", "end"}
+2025/06/02 15:37:55 ui: --> amazon-ebs.ubuntu: AMIs were created:
+us-east-2: ami-0d3f2f6056e753e1e
+2025/06/02 15:37:55 [INFO] (telemetry) Finalizing.
+2025/06/02 15:37:56 waiting for all plugin processes to complete...
+2025/06/02 15:37:56 C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: plugin process exited
+2025/06/02 15:37:56 C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: plugin process exited
+2025/06/02 15:37:56 C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: plugin process exited
+2025/06/02 15:37:56 C:\ProgramData\chocolatey\lib\packer\tools\packer.exe: plugin process exited
+2025/06/02 15:37:56 C:\Users\odver\AppData\Roaming\packer.d\plugins\github.com\hashicorp\amazon\packer-plugin-amazon_v1.3.6_x5.0_windows_amd64.exe: plugin process exited
